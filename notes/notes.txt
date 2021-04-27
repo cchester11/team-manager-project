@@ -1,0 +1,8 @@
+1. index.html doesnt seem to be connected to index.js
+  when trying to require the html the computer cant read that file
+
+2. need to create new player using input and append to players div
+
+3. also figure out how to push all player data to json
+
+4. cant connect to jquery. when i require a package do i have to call the name of the const that decalers it as a requirement?
