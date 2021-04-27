@@ -1,5 +1,4 @@
-const index = require()
-const playersJson = require('./JSON/players.json')
+const writeFile = require('./src/genFile')
 const playersArr = [];
 
 class Player {
@@ -23,34 +22,31 @@ changeBattingAverage(average) {
   }
 
   //rough sketch of a new player
-};
-
-function genertateNewPlayer() {
-  document.getElementById('#addPlayerBtn').on('click', (event) => {
-    event.preventDefault();
-
-    let playername = document.getElementById('#playerName')
-    .val()
-    .trim();
-
-    let playerbattingavg = document.getElementById('#playerBattingAvg')
-    .val()
-    .trim();
-
-    let newGuy = new Player(playername, playerbattingavg)
-    playersArr.push(newGuy)
-
-    document.getElementById('#players-card').append(newGuy)
-
-    document.getElementById('#playerName').val('');
-    document.getElementById('#playerBattingAvg').val('')
-  })
+  generateNewPlayer() {
+    document.getElementById('#addPlayerBtn').on('click', (event) => {
+      event.preventDefault();
+  
+      let playername = document.getElementById('#playerName')
+      .val()
+      .trim();
+  
+      let playerbattingavg = document.getElementById('#playerBattingAvg')
+      .val()
+      .trim();
+  
+      let newGuy = new Player(playername, playerbattingavg)
+      playersArr.push(newGuy)
+  
+      document.getElementById('#players-card').append(newGuy)
+  
+      document.getElementById('#playerName').val('');
+      document.getElementById('#playerBattingAvg').val('')
+    })
+  }
 };
 
 function allPlayerStats() {
   console.table(playersArr)
-
-  console.table(playersJson)
 };
 
 let Brian = new Player('Brian', .245)
@@ -62,5 +58,6 @@ let George = new Player('George', .223)
 George.changeBattingAverage(.329);
 Brian.changeBattingAverage(.224);
 
-genertateNewPlayer();
+generateNewPlayer();
+writeFile();
 allPlayerStats();
