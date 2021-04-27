@@ -1,0 +1,23 @@
+{
+  "name": "team-manager-project",
+  "version": "1.0.0",
+  "description": "An application used for organizing sports team data",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cchester11/team-manager-project.git"
+  },
+  "author": "Charles Chester",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cchester11/team-manager-project/issues"
+  },
+  "homepage": "https://github.com/cchester11/team-manager-project#readme",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "jquery": "^3.6.0"
+  }
+}

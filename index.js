@@ -1,4 +1,4 @@
-const index = require('./index.html')
+const index = require()
 const playersJson = require('./JSON/players.json')
 const playersArr = [];
 
