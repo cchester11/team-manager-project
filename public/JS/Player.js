@@ -5,7 +5,6 @@ class Player {
     playersArr.push(this);
   }
 
-
   getStats() {
       console.table({
         name: this.name,
@@ -18,4 +17,4 @@ class Player {
     }
 };
 
-module.exports = Player;
+export default Player;
