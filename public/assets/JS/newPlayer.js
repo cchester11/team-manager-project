@@ -1,16 +1,18 @@
 import Player from './Player';
 import teamStats from './teamStats';
 
+const $playerAdd = document.getElementById('addPlayerBtn')
+
 const playersArr = [];
 
 const generateNewPlayer = function(event) {
   event.preventDefault();
   
-  let playername = $('#playerName')
+  const playername = $('#playerName')
   .val()
   .trim();
 
-  let playerbattingavg = $('#playerBattingAvg')
+  const playerbattingavg = $('#playerBattingAvg')
   .val()
   .trim();
 
@@ -29,6 +31,6 @@ const generateNewPlayer = function(event) {
   teamStats();
 };
 
-document.getElementById('#addPlayerBtn').on('click', generateNewPlayer);
+$playerAdd.addEventListener('submit', generateNewPlayer);
 
 // export default generateNewPlayer;
