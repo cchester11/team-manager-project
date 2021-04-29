@@ -3,7 +3,8 @@ import teamStats from './teamStats';
 
 const playersArr = [];
 
-const generateNewPlayer = function() {
+const generateNewPlayer = function(event) {
+  event.preventDefault();
   
   let playername = $('#playerName')
   .val()
@@ -28,6 +29,6 @@ const generateNewPlayer = function() {
   teamStats();
 };
 
-$('#addPlayerBtn').on('click', generateNewPlayer);
+document.getElementById('#addPlayerBtn').on('click', generateNewPlayer);
 
 // export default generateNewPlayer;
