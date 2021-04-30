@@ -1,23 +1,19 @@
 import Player from './Player';
 import teamStats from './teamStats';
 
-const $playerAdd = document.getElementById('addPlayerBtn')
+const $playerAdd = document.getElementById('addPlayerBtn');
 
 const playersArr = [];
 
 const generateNewPlayer = function(event) {
   event.preventDefault();
   
-  const playername = $('#playerName')
-  .val()
-  .trim();
+  const playername = $('#playerName').value;
 
-  const playerbattingavg = $('#playerBattingAvg')
-  .val()
-  .trim();
+  const playerbattingavg = $('#playerBattingAvg').value;
 
-  let newGuy = new Player(playername, playerbattingavg)
-  playersArr.push(newGuy)
+  let newGuy = new Player(playername, playerbattingavg);
+  // playersArr.push(newGuy)
 
   //change playerArray to localStorage
 

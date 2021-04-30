@@ -16,3 +16,8 @@
   margin-bottom: 0;
   padding: 40px;
 }
+
+#addPlayerBtn {
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
