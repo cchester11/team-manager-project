@@ -4,7 +4,8 @@
   "description": "An application used for organizing sports team data",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

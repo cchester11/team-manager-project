@@ -1,0 +1,19 @@
+{
+  "players": [
+    {
+      "id": "0",
+      "name": "Harold",
+      "battingAverage": ".332"
+    },
+    {
+      "id": "1",
+      "name": "Pablo",
+      "battingAverage": ".279"
+    },
+    {
+      "id": "2",
+      "name": "Sam",
+      "battingAverage": ".311"
+    }
+  ]
+}
