@@ -9,12 +9,14 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- heading -->
   <div class='container-fluid bg-danger navbar-nav' id='containerZero'>
     <h1 class='float-start text-white navbar-text'>
       The Manager's Page
     </h1>
   </div> 
 
+  <!-- this div displays all of your players -->
   <div class='container-fluid text-black' id='containerOne'>
     <div class='container' id="containerTwo">
       <div class="row row-cols-2 row-cols-lg-2 g-5 g-lg-9" id="row">
@@ -41,6 +43,7 @@
       </div>
     </div> 
 
+    <!-- this div is used to add a player to your team -->
     <div class='container border bg-light' id='containerTwo'>
       <div class="mb-3">
         <label for="playerName" class="form-label">Add your players name</label>
@@ -57,9 +60,12 @@
     </div>
   </div>
 
+  <!-- footer -->
   <div class="container-fluid bg-danger" id='containerThree'>
     <footer class="text-white">Footer</footer>
   </div>
+
+  <!-- scripts loaded into the DOM -->
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="./assets/JS/newPlayer.js"></script>
 </body>

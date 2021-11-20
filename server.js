@@ -1,9 +1,11 @@
 const express = require('express');
+const express = require('express')
+const app = express()
+
 const apiRoutes = require('./routes/apiRoutes/playersRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
 const PORT = process.env.PORT || 3000;
-const app = express();
 
 // Sets up the Express app to handle data parsing
 app.use(express.static('public'));

@@ -3,6 +3,8 @@ const { filterByQuery, createNewPlayer } = require('../../lib');
 const players = require('../../data/players.json');
 const { Players } = require('./Models/Players')
 
+// all routes begin with prefix /api
+
 //pushing json data to the host
 router.get('/players', (req, res) => {
   Players.findAll({})
