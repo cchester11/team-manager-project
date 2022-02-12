@@ -6,3 +6,4 @@ test('creates a new player object', () => {
   expect(Brian.name).toBe('Brian');
   expect(Brian.battingAverage).toBe('.234');
 })
+

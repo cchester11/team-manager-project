@@ -1,4 +1,3 @@
-const express = require('express');
 const express = require('express')
 const app = express()
 
@@ -17,4 +16,4 @@ app.use('/api', apiRoutes);
 
 app.listen(PORT, () => {
   console.log(`App listening on PORT ${PORT}`);
-});
+}); 
